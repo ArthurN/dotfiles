@@ -1,0 +1,22 @@
+- clean: ['~']
+
+- link:
+    ~/.bashrc:
+        relink: true
+        path: .bashrc
+    ~/.git-completion.bash:
+        relink: true
+        path: .git-completion.bash
+    ~/.gitconfig: 
+        relink: true
+        path: .gitconfig
+    ~/.gitignore: 
+        relink: true
+        path: .gitignore
+    ~/.osx: 
+        relink: true
+        path: .osx
+
+- shell:
+    - [chmod +x ~/.osx, Setting permissions...]
+    - [~/.osx, Setting OSX defaults...]
