@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+		"thor",
+		"cap",
+		"rabl",
+		"Guardfile"
+	],
+  "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
+}

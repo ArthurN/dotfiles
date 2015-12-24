@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+function(xhr) {
+  $0
+}.bind(this)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>$fail</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>jQuery AJAX Fail Function</description>
+</snippet>

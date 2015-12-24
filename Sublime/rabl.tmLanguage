@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>rabl</string>
+	</array>
+	<key>name</key>
+	<string>Rabl</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>object|attributes|collection|attribute|lambda|do|end|unless</string>
+			<key>name</key>
+			<string>keyword.source.rabl</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>@{1,2}[^\.\s\(\[=@]+\b</string>
+			<key>name</key>
+			<string>variable.source.rabl</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\:[^\.\s=]+\b</string>
+			<key>name</key>
+			<string>string.source.rabl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.rabl</string>
+	<key>uuid</key>
+	<string>134b1791-d994-40a9-980e-dcc2c1b687f3</string>
+</dict>
+</plist>

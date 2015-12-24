@@ -1,0 +1,87 @@
+{
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Behave Color Scheme/Behave.tmTheme",
+	"copy_with_empty_selection": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		".scssc",
+		".gitkeep",
+		".keep",
+		".tags",
+		".gemtags"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"bin",
+		".bundle",
+		"vendor/cache",
+		"vendor/bundle",
+		"tmp",
+		"log",
+		".idea",
+		".capistrano"
+	],
+	"font_face": "Inconsolata",
+	"font_size": 16.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Alternative Autocompletion",
+		"CTags",
+		"SublimeCodeIntel",
+		"Vintage"
+	],
+	"index_files": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"paths":
+	{
+		"linux":
+		[
+		],
+		"osx":
+		[
+			"~/.rbenv/shims"
+		],
+		"windows":
+		[
+		]
+	},
+	"phoenix_dirty_bottom_bar_red": true,
+	"rulers":
+	[
+		120,
+		130
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true,
+	"word_wrap": false
+}

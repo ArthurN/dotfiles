@@ -1,0 +1,31 @@
+[user]
+	name = Arthur Nisnevich
+	email = arthur.nisnevich@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+[core]
+	editor = subl -n -w
+	excludesfile = /Users/arthur/.gitignore
+[merge]
+	tool = opendiff
+[alias]
+	st = status
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	co = checkout
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+[diff]
+[difftool "twdiff"]
+	cmd = twdiff --wait \"$LOCAL\" \"$REMOTE\"
+[difftool "opendiff"]
+[difftool]
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Development/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
