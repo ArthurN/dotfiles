@@ -1,22 +1,17 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc:
-        relink: true
-        path: .bashrc
-    ~/.git-completion.bash:
-        relink: true
-        path: .git-completion.bash
-    ~/.gitconfig: 
-        relink: true
-        path: .gitconfig
-    ~/.gitignore: 
-        relink: true
-        path: .gitignore
-    ~/.osx: 
-        relink: true
-        path: .osx
+    ~/.bash: '.bash/'
+    ~/.bashrc: .bashrc
+    ~/.gitconfig: .gitconfig
+    ~/.gitignore: '.gitignore-global'
+    ~/.osx: .osx
+    ~/.bash_profile: .bash_profile
+    ~/.gemrc: .gemrc
+    ~/.inputrc: .inputrc
+    /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
-- shell:
-    - [chmod +x ~/.osx, Setting permissions...]
-    - [~/.osx, Setting OSX defaults...]
+# - shell:
+#   - [cp -r init/ ~/init, Copying initial files (fonts, themes, etc)...]
+#   - [chmod +x ~/.osx, Setting file permissions...]
+#   - [~/.osx, Setting OSX defaults...]

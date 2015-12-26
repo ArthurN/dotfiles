@@ -1,8 +1,2 @@
-# Mac OS
-.DS_Store
-
-# Temp directories
-tmp
-
-# Logs
-*.log
+# Private environment sh file ignored
+bash/env.sh
