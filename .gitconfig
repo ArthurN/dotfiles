@@ -11,10 +11,11 @@
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	co = checkout
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-
+	
 	reup = rebase-update
 
 [color]
@@ -23,8 +24,6 @@
 [core]
 	editor = subl -n -w
 	excludesfile = ~/.gitignore
-	# insanely beautiful diffs
-	pager = diff-highlight | diff-so-fancy | less -r
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -42,14 +41,6 @@
 	untracked = cyan
 [merge]
 	tool = opendiff
-
-
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
-
 
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
