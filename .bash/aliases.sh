@@ -46,7 +46,7 @@ alias c="clear"
 alias h="history"
 alias o="open"
 alias home="cd $HOME"
-alias pss='ps axu | githubrep --invert-match grep | grep "$@" --ignore-case --color=auto'
+alias pss='ps axu | grep "$@" --ignore-case --color=auto'
 alias cdul="cd /usr/local/"
 alias cdcellar="cd /usr/local/Cellar"
 
