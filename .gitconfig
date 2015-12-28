@@ -23,7 +23,7 @@
 
 [core]
 	editor = subl -n -w
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/arthur/.gitignore
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -45,3 +45,10 @@
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
