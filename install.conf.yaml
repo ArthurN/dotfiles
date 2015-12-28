@@ -9,6 +9,7 @@
     ~/.bash_profile: .bash_profile
     ~/.gemrc: .gemrc
     ~/.inputrc: .inputrc
+    ~/.powconfig: .powconfig
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
 # Uncomment for first run:

@@ -1,0 +1,4 @@
+# Kill idle applications after 8 hours
+export POW_TIMEOUT=28800
+
+export POW_WORKERS=2
