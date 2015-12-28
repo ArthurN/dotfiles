@@ -11,6 +11,7 @@
     ~/.inputrc: .inputrc
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
+# Uncomment for first run:
 # - shell:
 #   - [cp -r init/ ~/init, Copying initial files (fonts, themes, etc)...]
 #   - [chmod +x ~/.osx, Setting file permissions...]
