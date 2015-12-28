@@ -24,12 +24,12 @@ prompt_git() {
 
       # Check for uncommitted changes in the index.
       if ! $(git diff --quiet --ignore-submodules --cached); then
-        s+='+';
+        s+='M';
       fi;
 
       # Check for unstaged changes.
       if ! $(git diff-files --quiet --ignore-submodules --); then
-        s+='!';
+        s+='*';
       fi;
 
       # Check for untracked files.
@@ -39,7 +39,7 @@ prompt_git() {
 
       # Check for stashed files.
       if $(git rev-parse --verify refs/stash &>/dev/null); then
-        s+='$';
+        s+='~';
       fi;
 
     fi;
