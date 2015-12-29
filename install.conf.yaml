@@ -10,6 +10,7 @@
     ~/.gemrc: .gemrc
     ~/.inputrc: .inputrc
     ~/.powconfig: .powconfig
+    ~/.irbrc: .irbrc
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
 # Uncomment for first run:
