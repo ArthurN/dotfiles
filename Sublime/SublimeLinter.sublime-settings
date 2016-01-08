@@ -8,7 +8,7 @@
 		"gutter_theme_excludes":
 		[
 		],
-		"lint_mode": "manual",
+		"lint_mode": "background",
 		"linters":
 		{
 			"rubocop":
@@ -44,8 +44,8 @@
 				"include-linter": ""
 			}
 		},
-		"mark_style": "outline",
-		"no_column_highlights_line": false,
+		"mark_style": "stippled underline",
+		"no_column_highlights_line": true,
 		"passive_warnings": false,
 		"paths":
 		{

@@ -3,7 +3,7 @@
 require 'test_helper'
 
 class $1 < ActiveSupport::TestCase
-
+  parallelize_me!
 end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

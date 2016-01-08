@@ -1,3 +1,7 @@
 # Private environment sh file ignored
 .bash/env.sh
 
+# Sublime stuff I don't care about
+Sublime/Package Control.cache/
+Sublime/Package Control.last-run
+Sublime/Package Control.*

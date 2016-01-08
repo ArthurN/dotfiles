@@ -12,9 +12,11 @@
     ~/.powconfig: .powconfig
     ~/.irbrc: .irbrc
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+    "~/Library/Application Support/Sublime Text 3/Packages/User": 'Sublime/'
 
 # Uncomment for first run:
 # - shell:
 #   - [cp -r init/ ~/init, Copying initial files (fonts, themes, etc)...]
 #   - [chmod +x ~/.osx, Setting file permissions...]
 #   - [~/.osx, Setting OSX defaults...]
+#   - 
