@@ -121,5 +121,5 @@ export PS2;
 
 export SUDO_PS1='\[\e[31m\]\u\[\e[37m\]:\[\e[33m\]\w\[\e[31m\]\$\[\033[00m\] '
 
-# http://www.hackaddict.net/2008/01/delete-backwards-word-with-optiondelete.html
-bind '"\M-d": backward-kill-word'
+# https://coderwall.com/p/dapstw/keybindings-for-macosx-users-on-iterm2
+bind '\C-w:unix-filename-rubout'
