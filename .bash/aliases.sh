@@ -66,6 +66,7 @@ alias taild="tail -f log/development.log"
 alias tailt="tail -f log/test.log"
 alias rres="touch tmp/restart.txt"
 alias rc="rails c"
+alias g="guard"
 
 # Sublime (/usr/local/bin/sublime -> Applications/Sublime Text 3.app/Contents/...)
 alias subl="sublime"

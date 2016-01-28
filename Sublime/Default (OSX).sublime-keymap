@@ -2,10 +2,5 @@
   { "keys": ["ctrl+command+r"], "command": "reveal_in_side_bar" },
   { "keys": ["ctrl+plus"], "command": "jump_forward" },
   { "keys": ["ctrl+equals"], "command": "jump_forward" },
-
-  // CTAGS
-  // {
-  //   "command": "navigate_to_definition",
-  //   "keys": ["super+alt+down"]
-  // },
+  { "keys": ["super+shift+l"], "command": "reindent"}
 ]

@@ -22,7 +22,7 @@
 	ui = always
 
 [core]
-	editor = subl -nw
+	editor = sublime -nw
 	excludesfile = /Users/arthur/.gitignore
 [color "branch"]
 	current = yellow reverse

@@ -14,4 +14,7 @@ IRB.conf[:USE_READLINE] = true
 # Enable route helpers in Rails console
 if defined? Rails
   include Rails.application.routes.url_helpers
+
+  # Turn down SQL debugging in the console (typically I am tailing the dev log anyway)
+  ActiveRecord::Base.logger.level = 1
 end
