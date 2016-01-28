@@ -16,5 +16,9 @@ if defined? Rails
   include Rails.application.routes.url_helpers
 
   # Turn down SQL debugging in the console (typically I am tailing the dev log anyway)
-  ActiveRecord::Base.logger.level = 1
+  ActiveRecord::Base.logger = Logger.new("#{Rails.root}/log/development.log")
+  ActiveRecord::Base.logger.level = 0
+
+  # Disable Hirb from Irbtools
+  Hirb::View.disable
 end
