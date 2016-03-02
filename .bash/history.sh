@@ -1,5 +1,12 @@
 # History
 export HISTTIMEFORMAT="%m-%d %T  "
-export HISTCONTROL=erasedups # Remove duplicate entries.
-export HISTSIZE=1000 # Keep a lengthy history.
-export HISTIGNORE="..:...:c:h:l:l1:p:pwd:gst:gd:exit:* --help" # Exclude mundane commands.
+
+# Remove duplicate entries.
+export HISTCONTROL="erasedups:ignoreboth"
+
+# Huge history. Doesn't appear to slow things down, so why not?
+export HISTSIZE=500000
+export HISTFILESIZE=100000
+
+ # Exclude mundane commands.
+export HISTIGNORE="..:...:c:h:l:l1:p:pwd:gst:gd:exit:* --help:fg:bg:ls:ll:history:"
