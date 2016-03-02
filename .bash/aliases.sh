@@ -65,8 +65,8 @@ alias fs="stat -f \"%z bytes\""
 alias taild="tail -f log/development.log"
 alias tailt="tail -f log/test.log"
 alias rres="touch tmp/restart.txt"
-alias rc="rails c"
-alias g="guard"
+alias rc="./bin/rails c"
+alias g="./bin/guard"
 
 # Sublime (/usr/local/bin/sublime -> Applications/Sublime Text 3.app/Contents/...)
 alias subl="sublime"
