@@ -7,7 +7,7 @@ shopt -s histappend
 shopt -s nocaseglob
 
 # EDITOR
-export EDITOR="sublime -n"
+export EDITOR="sublime -nw"
 
 # Private environment stuff
 . "$HOME/.bash/env.sh"
