@@ -11,6 +11,7 @@
     ~/.inputrc: .inputrc
     ~/.powconfig: .powconfig
     ~/.irbrc: .irbrc
+    ~/.pryrc: .pryrc
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
     "~/Library/Application Support/Sublime Text 3/Packages/User": 'Sublime/'
 

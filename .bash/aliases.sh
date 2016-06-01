@@ -67,6 +67,7 @@ alias tailt="tail -f log/test.log"
 alias rres="touch tmp/restart.txt"
 alias rc="./bin/rails c"
 alias g="./bin/guard"
+alias ss="./bin/spring stop"
 
 # Sublime (/usr/local/bin/sublime -> Applications/Sublime Text 3.app/Contents/...)
 alias subl="sublime"
