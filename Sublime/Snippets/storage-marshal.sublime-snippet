@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+# Marshals ${1:XYZClass} objects to/from ActiveRecord JSON store
+class StorageMarshal
+  def self.dump(obj)
+    unless obj.is_a?(${1:XYZClass})
+      raise(::ActiveRecord::SerializationTypeMismatch, 
+            "Argument was supposed to be an ${1:XYZClass}, but was a #{obj.class}. -- #{obj.inspect}") 
+    end
+
+    # TODO: dump
+  end
+
+  def self.load(hash)
+    unless hash.is_a?(Hash)
+      raise(::ActiveRecord::SerializationTypeMismatch, 
+            "Argument was supposed to be a Hash, but was a #{hash.class}. -- #{hash.inspect}") 
+    end
+
+    # TODO: load
+  end
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>storage-marshal</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>
