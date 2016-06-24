@@ -54,3 +54,7 @@
 	trustExitCode = true
 [commit]
 	template = /Users/arthur/.stCommitMsg
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = preserve
