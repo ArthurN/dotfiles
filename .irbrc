@@ -2,6 +2,7 @@ require 'rubygems'
 require 'irb/completion'
 require 'pp'
 require 'irbtools'  # https://github.com/janlelis/irbtools
+require "awesome_print"
 
 # irb history
 IRB.conf[:EVAL_HISTORY] = 1000
@@ -21,4 +22,6 @@ if defined? Rails
 
   # Disable Hirb from Irbtools
   Hirb::View.disable
+
+  AwesomePrint.irb!
 end

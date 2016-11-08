@@ -48,7 +48,8 @@
 		".idea",
 		".capistrano",
 		"node_modules",
-		"bower_components"
+		"bower_components",
+		"webpacked"
 	],
 	"font_face": "Inconsolata",
 	"font_size": 16.0,
@@ -56,6 +57,7 @@
 	"ignored_packages":
 	[
 		"Alternative Autocompletion",
+		"BeautifyRuby",
 		"CTags",
 		"SublimeCodeIntel",
 		"Vintage"
