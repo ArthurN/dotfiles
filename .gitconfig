@@ -59,5 +59,3 @@
 	autosetuprebase = always
 [pull]
 	rebase = preserve
-[url "https://github.com"]
-	insteadOf = git://github.com

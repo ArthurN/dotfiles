@@ -1,19 +1,19 @@
 - clean: ['~']
 
 - link:
-    ~/.bash: '.bash/'
-    ~/.bashrc: .bashrc
-    ~/.gitconfig: .gitconfig
-    ~/.gitignore: '.gitignore-global'
-    ~/.osx: .osx
-    ~/.bash_profile: .bash_profile
-    ~/.gemrc: .gemrc
-    ~/.inputrc: .inputrc
-    ~/.powconfig: .powconfig
-    ~/.irbrc: .irbrc
-    ~/.pryrc: .pryrc
-    /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-    "~/Library/Application Support/Sublime Text 3/Packages/User": 'Sublime/'
+  ~/.bash: '.bash/'
+  ~/.bashrc: .bashrc
+  ~/.gitconfig: .gitconfig
+  ~/.gitignore: '.gitignore-global'
+  ~/.osx: .osx
+  ~/.bash_profile: .bash_profile
+  ~/.gemrc: .gemrc
+  ~/.inputrc: .inputrc
+  ~/.powconfig: .powconfig
+  ~/.irbrc: .irbrc
+  ~/.pryrc: .pryrc
+  /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+  "~/Library/Application Support/Sublime Text 3/Packages/User": 'Sublime/'
 
 # Uncomment for first run:
 # - shell:
