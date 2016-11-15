@@ -24,5 +24,5 @@ export EDITOR="sublime -nw"
 # Initialize rbenv
 eval "$(rbenv init -)"
 
-# Use local bin/ folder when available (Rails binstubs)
-export PATH="./bin:$PATH"
+# Path
+. "$HOME/.bash/path.sh"
