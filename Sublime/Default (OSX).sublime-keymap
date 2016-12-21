@@ -2,5 +2,10 @@
   { "keys": ["ctrl+command+r"], "command": "reveal_in_side_bar" },
   { "keys": ["ctrl+plus"], "command": "jump_forward" },
   { "keys": ["ctrl+equals"], "command": "jump_forward" },
-  { "keys": ["super+shift+l"], "command": "reindent"}
+  { "keys": ["super+shift+l"], "command": "reindent"},
+  { "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+  { "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+  { "keys": ["alt+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+  { "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+  { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
 ]

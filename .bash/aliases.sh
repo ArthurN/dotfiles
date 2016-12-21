@@ -74,3 +74,6 @@ alias subl="sublime"
 
 # SSH
 alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
+
+# Personal
+alias code="cd ~/Code/"
