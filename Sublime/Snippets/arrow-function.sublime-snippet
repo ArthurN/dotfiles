@@ -6,4 +6,5 @@
 ]]></content>
   <tabTrigger>=></tabTrigger>
   <description>ES6 Arrow Function</description>
+  <scope>source.js</scope>
 </snippet>

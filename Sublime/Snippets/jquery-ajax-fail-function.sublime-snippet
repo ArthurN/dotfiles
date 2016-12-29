@@ -6,4 +6,5 @@ fail(xhr => {
 ]]></content>
   <tabTrigger>ajaxfail</tabTrigger>
   <description>jQuery AJAX Fail Function</description>
+  <scope>source.js</scope>
 </snippet>

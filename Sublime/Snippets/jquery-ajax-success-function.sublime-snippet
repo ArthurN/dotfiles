@@ -6,4 +6,5 @@ done((responseText, textStatus, xhr) => {
 ]]></content>
   <tabTrigger>ajaxsuccess</tabTrigger>
   <description>jQuery AJAX Success Function</description>
+  <scope>source.js</scope>
 </snippet>
