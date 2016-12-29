@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-(responseText, textStatus, xhr) => {
+done((responseText, textStatus, xhr) => {
   $0
-}
+})
 ]]></content>
   <tabTrigger>ajaxsuccess</tabTrigger>
   <description>jQuery AJAX Success Function</description>

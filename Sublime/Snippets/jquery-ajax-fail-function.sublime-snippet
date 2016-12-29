@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-xhr => {
+fail(xhr => {
   $0
-}
+})
 ]]></content>
   <tabTrigger>ajaxfail</tabTrigger>
   <description>jQuery AJAX Fail Function</description>
