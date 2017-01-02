@@ -13,6 +13,7 @@
 	co = checkout
 	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
 	cp = cherry-pick
+	stashkeep = stash -u --keep-index
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
