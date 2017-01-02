@@ -21,6 +21,11 @@ export EDITOR="sublime -nw"
 # Git completion:
 . "$HOME/.bash/git-completion.bash"
 
+# Homebrew bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
 # Initialize rbenv
 eval "$(rbenv init -)"
 
