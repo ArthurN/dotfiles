@@ -29,5 +29,9 @@ fi
 # Initialize rbenv
 eval "$(rbenv init -)"
 
+# HACKFIX
+# https://github.com/lionheart/openradar-mirror/issues/15361
+{ eval `ssh-agent`; ssh-add -A; } &>/dev/null
+
 # Path
 . "$HOME/.bash/path.sh"
