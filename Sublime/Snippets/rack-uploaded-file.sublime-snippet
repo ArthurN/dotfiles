@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+Rack::Test::UploadedFile.new('test/fixtures/${1:passport.jpg}')
+]]></content>
+  <tabTrigger>rack-test-uploaded-file</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>
