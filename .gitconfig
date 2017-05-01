@@ -14,11 +14,9 @@
 	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
 	cp = cherry-pick
 	stashkeep = stash -u --keep-index
-
+	fpp = !"git fetch --prune; git pull"
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-	
-	reup = rebase-update
 
 [color]
 	ui = always
@@ -50,7 +48,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
