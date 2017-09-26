@@ -29,6 +29,12 @@ fi
 # Initialize rbenv
 eval "$(rbenv init -)"
 
+# Lunchy bash completion (must be after rbenv init)
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
+ . $LUNCHY_DIR/lunchy-completion.bash
+fi
+
 # HACKFIX
 # https://github.com/lionheart/openradar-mirror/issues/15361
 { eval `ssh-agent`; ssh-add -A; } &>/dev/null

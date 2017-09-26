@@ -49,10 +49,12 @@
 		".capistrano",
 		"node_modules",
 		"bower_components",
-		"webpacked"
+		"webpacked",
+		"docs-yard",
+		".yardoc"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 16.0,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -86,6 +88,7 @@
 		130
 	],
 	"tab_size": 2,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,

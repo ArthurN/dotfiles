@@ -1,6 +1,6 @@
 [user]
 	name = Arthur Nisnevich
-	email = arthur.nisnevich@gmail.com
+	email = arthur@workbright.com
 
 [alias]
 	c = commit -am
@@ -23,7 +23,7 @@
 
 [core]
 	editor = sublime -nw
-	excludesfile = /Users/arthur/.gitignore
+	excludesfile = /Users/arthur/.gitignore_global
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -48,7 +48,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -56,5 +56,7 @@
 	template = /Users/arthur/.stCommitMsg
 [branch]
 	autosetuprebase = always
+	autosetupmerge = always
 [pull]
 	rebase = preserve
+	default = current
