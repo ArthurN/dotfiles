@@ -49,12 +49,11 @@
 		".capistrano",
 		"node_modules",
 		"bower_components",
-		"webpacked",
 		"docs-yard",
 		".yardoc"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 16,
+	"font_size": 17,
 	"highlight_line": true,
 	"ignored_packages":
 	[

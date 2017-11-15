@@ -55,7 +55,7 @@
 [commit]
 	template = /Users/arthur/.stCommitMsg
 [branch]
-	autosetuprebase = always
+	autosetuprebase = never
 	autosetupmerge = always
 [pull]
 	rebase = preserve

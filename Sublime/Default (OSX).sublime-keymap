@@ -8,4 +8,5 @@
   { "keys": ["alt+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
   { "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
   { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+  { "keys": ["ctrl+h"], "command": "dash_doc", "args": { "flip_syntax_sensitive": false } }
 ]
