@@ -36,8 +36,8 @@ if ls --color > /dev/null 2>&1; then # GNU `ls`
 else # OS X `ls`
     lsflags="-G"
 fi
-alias ll='ls -lah ${lsflags}'
-alias ls='ls -hFp ${lsflags}'
+alias ll='colourify ls -lah ${lsflags}'
+alias ls='colourify ls -hFp ${lsflags}'
 
 # General
 alias ..="cd .."

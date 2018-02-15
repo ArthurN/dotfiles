@@ -35,9 +35,18 @@ if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
  . $LUNCHY_DIR/lunchy-completion.bash
 fi
 
-# HACKFIX
-# https://github.com/lionheart/openradar-mirror/issues/15361
-{ eval `ssh-agent`; ssh-add -A; } &>/dev/null
+# Manage SSH-agent
+ps -u $(whoami) | grep ssh-agent &> /dev/null
+if [ $? -ne 0 ];then
+    eval $(ssh-agent)
+    ssh-add -A
+    echo "export SSH_AGENT_PID=$SSH_AGENT_PID" > ~/.agent-profile
+    echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> ~/.agent-profile
+else
+    source ~/.agent-profile
+fi
+trap 'ssh-agent -k; exit' 0
+
 
 # Path
 . "$HOME/.bash/path.sh"
