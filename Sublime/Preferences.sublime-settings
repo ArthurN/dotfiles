@@ -58,7 +58,6 @@
 	"ignored_packages":
 	[
 		"Alternative Autocompletion",
-		"BeautifyRuby",
 		"CTags",
 		"RuboCop",
 		"SublimeCodeIntel",
@@ -67,20 +66,8 @@
 	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"paths":
-	{
-		"linux":
-		[
-		],
-		"osx":
-		[
-			"~/.rbenv/shims"
-		],
-		"windows":
-		[
-		]
-	},
 	"phoenix_dirty_bottom_bar_red": true,
+	"rubocop_path": "rbenv exec rubocop",
 	"rulers":
 	[
 		120,
