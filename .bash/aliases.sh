@@ -1,3 +1,10 @@
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    lsflags="--color --group-directories-first"
+else # OS X `ls`
+    lsflags="-G"
+fi
+
 # Colorization
 # Use GRC for additionnal colorization
 GRC=$(which grc)
@@ -13,31 +20,21 @@ if [ -n GRC ]; then
     alias gcc='colourify gcc'
     alias head='colourify head'
     alias ifconfig='colourify ifconfig'
-    #irclog
+    alias ll='ls -lah ${lsflags}'
+    alias ls='ls -hFp ${lsflags}'
     alias ld='colourify ld'
-    #ldap
-    #log
     alias ls='colourify ls'
     alias make='colourify make'
     alias mount='colourify mount'
-    #mtr
     alias netstat='colourify netstat'
     alias ping='colourify ping'
-    #proftpd
     alias ps='colourify ps'
     alias tail='colourify tail'
     alias traceroute='colourify traceroute'
-    #wdiff
+else
+    alias ll='ls -lah ${lsflags}'
+    alias ls='ls -hFp ${lsflags}'
 fi
-
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-    lsflags="--color --group-directories-first"
-else # OS X `ls`
-    lsflags="-G"
-fi
-alias ll='colourify ls -lah ${lsflags}'
-alias ls='colourify ls -hFp ${lsflags}'
 
 # General
 alias ..="cd .."

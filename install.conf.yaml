@@ -10,11 +10,9 @@
     ~/.bashrc: .bashrc
     ~/.gitconfig: .gitconfig
     ~/.gitignore: '.gitignore-global'
-    ~/.osx: .osx
     ~/.bash_profile: .bash_profile
     ~/.gemrc: .gemrc
     ~/.inputrc: .inputrc
-    ~/.powconfig: .powconfig
     ~/.irbrc: .irbrc
     ~/.pryrc: .pryrc
     /usr/local/bin/sublime: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
@@ -23,6 +21,5 @@
 # Uncomment for first run:
 - shell:
   - [cp -r init/ ~/init, Copying initial files (fonts, themes, etc)...]
-  - [chmod +x ~/.osx, Setting file permissions...]
-  - [~/.osx, Setting OSX defaults...]
-#   -
+  - [chmod +x .macos, Setting file permissions...]
+  - [./.macos, Setting MacOS defaults...]

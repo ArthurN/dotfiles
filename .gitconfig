@@ -1,6 +1,6 @@
 [user]
 	name = Arthur Nisnevich
-	email = arthur@workbright.com
+	email = arthur.nisnevich@gmail.com
 
 [alias]
 	c = commit -am
@@ -48,7 +48,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
