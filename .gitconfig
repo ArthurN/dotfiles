@@ -23,7 +23,7 @@
 
 [core]
 	editor = sublime -nw
-	excludesfile = /Users/arthur/.gitignore_global
+	excludesfile = /Users/arthur/.gitignore
 [color "branch"]
 	current = yellow reverse
 	local = yellow

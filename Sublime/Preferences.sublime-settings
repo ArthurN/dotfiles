@@ -3,7 +3,7 @@
 	"auto_complete_commit_on_tab": true,
 	"auto_indent": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Behave Color Scheme/Behave.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -53,7 +53,7 @@
 		".yardoc"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 17,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
