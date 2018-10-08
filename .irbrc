@@ -1,8 +1,5 @@
-require 'rubygems'
+require 'irb/ext/save-history'
 require 'irb/completion'
-require 'pp'
-require 'irbtools'  # https://github.com/janlelis/irbtools
-require "awesome_print"
 
 # irb history
 IRB.conf[:EVAL_HISTORY] = 1000
@@ -12,6 +9,9 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:AUTO_INDENT] = true
 IRB.conf[:USE_READLINE] = true
 
+require 'rubygems'
+require "awesome_print"
+
 # Enable route helpers in Rails console
 if defined? Rails
   include Rails.application.routes.url_helpers
@@ -19,9 +19,6 @@ if defined? Rails
   # Turn down SQL debugging in the console (typically I am tailing the dev log anyway)
   ActiveRecord::Base.logger = Logger.new("#{Rails.root}/log/development.log")
   ActiveRecord::Base.logger.level = 0
-
-  # Disable Hirb from Irbtools
-  Hirb::View.disable
 
   AwesomePrint.irb!
 end
