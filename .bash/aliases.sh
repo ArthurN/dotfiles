@@ -65,6 +65,7 @@ alias rres="touch tmp/restart.txt"
 alias rc="./bin/rails c"
 alias g="./bin/guard"
 alias ss="./bin/spring stop"
+alias rcredit="./bin/rails credentials:edit"
 
 # Sublime (/usr/local/bin/sublime -> Applications/Sublime Text 3.app/Contents/...)
 alias subl="sublime"
