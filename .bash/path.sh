@@ -9,5 +9,11 @@ fi
 # GNU utils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
+# Python 3
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Use local bin/ folder when available (Rails binstubs)
 export PATH="./bin:$PATH"
+
+# Yarn
+export PATH="$HOME/.yarn/bin:$PATH"
