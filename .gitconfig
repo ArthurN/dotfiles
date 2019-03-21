@@ -9,7 +9,7 @@
 	st = status -s
 	sclone = clone --depth=1
 	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	co = checkout
 	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
 	cp = cherry-pick
@@ -22,7 +22,7 @@
 	ui = always
 
 [core]
-	editor = sublime -nw
+	editor = code -nw
 	excludesfile = /Users/arthur/.gitignore
 [color "branch"]
 	current = yellow reverse
@@ -63,3 +63,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	template = /Users/arthur/.stCommitMsg
