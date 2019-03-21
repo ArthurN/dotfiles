@@ -1,4 +1,7 @@
 # History
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+
 export HISTTIMEFORMAT="%m-%d %T  "
 
 # Remove duplicate entries.
