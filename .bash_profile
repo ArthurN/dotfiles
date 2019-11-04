@@ -34,6 +34,11 @@ LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
  . $LUNCHY_DIR/lunchy-completion.bash
 fi
+# For Zsh upgrade:
+# if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+# LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+#   . $LUNCHY_DIR/lunchy-completion.zsh
+# fi
 
 # Manage SSH-agent
 ps -u $(whoami) | grep ssh-agent &> /dev/null

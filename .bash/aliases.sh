@@ -68,8 +68,5 @@ alias ss="./bin/spring stop"
 alias rcredit="./bin/rails credentials:edit"
 alias be="bundle exec"
 
-# Sublime (/usr/local/bin/sublime -> Applications/Sublime Text 3.app/Contents/...)
-alias subl="sublime"
-
 # SSH
 alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"

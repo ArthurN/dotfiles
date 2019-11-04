@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-csv = []
-csv.each {|line| puts(line.map{ |v| "\"#{v}\"" }.join(',')); nil }; nil
-]]></content>
-  <tabTrigger>csvloop</tabTrigger>
-</snippet>

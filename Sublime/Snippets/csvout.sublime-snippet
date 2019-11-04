@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-csv.each { |line| puts(line.join(',')) }; nil
-]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>csvout</tabTrigger>
-</snippet>

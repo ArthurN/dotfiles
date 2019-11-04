@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-binding.remote_pry
-]]></content>
-  <tabTrigger>remote-pry</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.ruby</scope>
-</snippet>
