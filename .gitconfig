@@ -48,7 +48,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -56,7 +56,7 @@
 	autosetuprebase = never
 	autosetupmerge = always
 [pull]
-	rebase = preserve
+	rebase = merges
 	default = current
 [filter "lfs"]
 	clean = git-lfs clean -- %f
