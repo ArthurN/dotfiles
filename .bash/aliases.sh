@@ -70,3 +70,7 @@ alias be="bundle exec"
 
 # SSH
 alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
+
+# Docker
+alias d="docker"
+alias dc="docker-compose"
