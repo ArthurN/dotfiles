@@ -26,6 +26,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+# iTerm shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash" || true
+
 # Initialize rbenv
 eval "$(rbenv init -)"
 
@@ -65,3 +68,5 @@ export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_byte
 
 # Path
 . "$HOME/.bash/path.sh"
+
+
