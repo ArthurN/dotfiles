@@ -12,6 +12,9 @@ export EDITOR="code -nw"
 # Private environment stuff
 . "$HOME/.bash/env.sh"
 
+# iTerm shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash" || true
+
 # Bash stuff:
 . "$HOME/.bash/colors.sh"
 . "$HOME/.bash/prompt.sh"
@@ -25,9 +28,6 @@ export EDITOR="code -nw"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
-
-# iTerm shell integration
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash" || true
 
 # Initialize rbenv
 eval "$(rbenv init -)"
@@ -48,8 +48,6 @@ ps -u $(whoami) | grep ssh-agent &> /dev/null
 if [ $? -ne 0 ];then
     eval $(ssh-agent)
     ssh-add -A
-    echo "export SSH_AGENT_PID=$SSH_AGENT_PID" > ~/.agent-profile
-    echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> ~/.agent-profile
 else
     source ~/.agent-profile
 fi
@@ -61,12 +59,10 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Erlang shell history
 export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
 
 # Path
 . "$HOME/.bash/path.sh"
-
-
