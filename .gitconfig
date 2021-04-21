@@ -23,7 +23,7 @@
 
 [core]
 	editor = code -nw
-	excludesfile = /Users/arthur/.gitignore
+	excludesfile = /Users/arthur/.gitignore_global
 [color "branch"]
 	current = yellow reverse
 	local = yellow

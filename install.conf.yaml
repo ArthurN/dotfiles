@@ -6,19 +6,17 @@
 - clean: ['~']
 
 - link:
-    ~/.bash: '.bash/'
-    ~/.bashrc: .bashrc
+    ~/.zsh: .zsh/
+    ~/.zshrc: .zshrc
+    ~/.zprofile: .zprofile
     ~/.gitconfig: .gitconfig
-    ~/.gitignore: '.gitignore-global'
-    ~/.bash_profile: .bash_profile
-    ~/.gemrc: .gemrc
-    ~/.inputrc: .inputrc
+    ~/.gitignore_global: .gitignore_global
     ~/.irbrc: .irbrc
-    ~/.pryrc: .pryrc
-    "~/Library/Application Support/iTerm2/DynamicProfiles": "iTerm2/"
+    ~/.p10k.zsh: .p10k.zsh
+    ~/.ssh/config: .ssh/config
+    # "~/Library/Application Support/iTerm2/DynamicProfiles": "iTerm2/"
 
 # Uncomment for first run:
-- shell:
-  # - [cp -r init/ ~/init, Copying initial files (fonts, themes, etc)...]
+# - shell:
   # - [chmod +x .macos, Setting file permissions...]
   # - [./.macos, Setting MacOS defaults...]
