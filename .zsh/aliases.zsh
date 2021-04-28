@@ -15,3 +15,6 @@ alias fs="stat -f \"%z bytes\""
 
 # SSH
 alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
+
+# Docker
+alias dc="docker-compose"
