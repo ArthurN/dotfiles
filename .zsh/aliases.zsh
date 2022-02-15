@@ -18,3 +18,7 @@ alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
 
 # Docker
 alias dc="docker-compose"
+
+# Yarn
+alias yt="yarn test"
+alias yo="yarn outdated"
