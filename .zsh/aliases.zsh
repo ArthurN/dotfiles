@@ -22,3 +22,13 @@ alias dc="docker-compose"
 # Yarn
 alias yt="yarn test"
 alias yo="yarn outdated"
+
+# Elastic
+alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
+
+# Ruby
+alias be="rbenv exec bundle exec"
+
+# Python
+alias python="python3"
+alias pip="pip3"
