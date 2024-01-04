@@ -85,9 +85,9 @@ export EDITOR="code -nw"
 
 # PATH mods
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/postgresql@16/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
