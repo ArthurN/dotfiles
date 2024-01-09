@@ -7,7 +7,7 @@ alias h="history"
 alias ibrew="arch -x86_64 /opt/homebrew/bin/brew"
 
 # Network
-alias hosts="sudo $EDITOR /etc/hosts"
+alias hosts="$EDITOR /etc/hosts"
 
 # Disk/Files
 alias disk="df -P -kHl"
