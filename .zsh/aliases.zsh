@@ -18,6 +18,7 @@ alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
 
 # Docker
 alias dc="docker-compose"
+alias dcrw="docker-compose restart web"
 
 # Yarn
 alias yt="yarn test"
