@@ -74,7 +74,7 @@ ZSH_CUSTOM="/Users/arthur/.zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode docker docker-compose asdf)
+plugins=(git vscode docker docker-compose asdf direnv)
 
 # User configuration
 #==============================================================================================================================
