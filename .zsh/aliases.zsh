@@ -19,6 +19,7 @@ alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
 # Docker
 alias dc="docker-compose"
 alias dcrw="docker-compose restart web"
+alias dcrb="dc down -v && dc up --build --detach"
 
 # Yarn
 alias yt="yarn test"
@@ -33,3 +34,6 @@ alias be="rbenv exec bundle exec"
 # Python
 alias python="python3"
 alias pip="pip3"
+
+# Elixir/mix
+alias mt="mix test"
