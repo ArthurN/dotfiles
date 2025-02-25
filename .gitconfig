@@ -22,7 +22,7 @@
 	ui = always
 
 [core]
-	editor = code -nw
+	editor = cursor -nw
 	excludesfile = /Users/arthur/.gitignore_global
 [color "branch"]
 	current = yellow reverse

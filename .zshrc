@@ -81,7 +81,7 @@ plugins=(git vscode docker docker-compose asdf direnv)
 export LANG=en_US.UTF-8
 
 # EDITOR
-export EDITOR="code -nw"
+export EDITOR="cursor -nw"
 
 # PATH mods
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
