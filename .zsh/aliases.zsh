@@ -3,6 +3,17 @@ alias ll="ls -lAh --color=always"
 alias pss='ps axu | grep "$@" --ignore-case --color=auto'
 alias h="history"
 
+# Git
+alias g="git"
+alias gaa="git amend -a"
+alias gco="git co"
+alias gcm="git cm"
+alias gd="git d"
+alias gh="git hist"
+alias gst="git st"
+alias gp="git p"
+alias gpf="git pf"
+
 # Backwards compat
 alias ibrew="arch -x86_64 /opt/homebrew/bin/brew"
 
@@ -17,14 +28,14 @@ alias fs="stat -f \"%z bytes\""
 alias knownhosts="$EDITOR ${HOME}/.ssh/known_hosts"
 
 # Docker
-alias dc="docker-compose"
-alias dcrw="docker-compose restart web"
+alias dc="docker compose"
+alias dcrw="docker compose restart web"
 alias dcd="dc down"
 alias dcrb="dc down -v && dc up --build --detach"
 
 # Yarn
 alias yt="yarn test"
-alias yo="yarn outdated"
+alias yo="yarn upgrade-interactive"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
