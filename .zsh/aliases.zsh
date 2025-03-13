@@ -32,10 +32,11 @@ alias dc="docker compose"
 alias dcrw="docker compose restart web"
 alias dcd="dc down"
 alias dcrb="dc down -v && dc up --build --detach"
+alias dcup="dc up"
 
 # Yarn
 alias yt="yarn test"
-alias yo="yarn upgrade-interactive"
+alias yui="yarn upgrade-interactive"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
@@ -53,3 +54,6 @@ alias mta="mix test.all"
 
 # Fly.io
 alias fly-staging="fly -c fly.staging.toml"
+
+# Mise
+alias mrc="mise run cursor"
