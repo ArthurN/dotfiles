@@ -6,6 +6,7 @@ alias h="history"
 # Git
 alias g="git"
 alias gaa="git amend -a"
+alias gc="git c"
 alias gco="git co"
 alias gcm="git cm"
 alias gd="git d"
