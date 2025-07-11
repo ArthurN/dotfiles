@@ -87,15 +87,50 @@ export EDITOR="cursor -nw"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="$(brew --prefix)/opt/postgresql@16/bin:$PATH"
 
-source $ZSH/oh-my-zsh.sh
+# Agent detection - only activate minimal mode for actual agents
+if [[ -n "$npm_config_yes" ]] || [[ -n "$CI" ]] || [[ "$-" != *i* ]]; then
+  export AGENT_MODE=true
+else
+  export AGENT_MODE=false
+fi
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Set Oh My Zsh theme conditionally - disable for agents only
+if [[ "$AGENT_MODE" == "true" ]]; then
+  POWERLEVEL9K_INSTANT_PROMPT=off
+  # Disable complex prompt features for AI agents
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+  # Ensure non-interactive mode
+  export DEBIAN_FRONTEND=noninteractive
+  export NONINTERACTIVE=1
 
-eval "$(/Users/arthur/.local/bin/mise activate zsh)"
+  PROMPT='%n@%m:%~%# '
+  RPROMPT=''
+  unsetopt CORRECT
+  unsetopt CORRECT_ALL
+  setopt NO_BEEP
+  setopt NO_HIST_BEEP
+  setopt NO_LIST_BEEP
 
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/arthur/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
+  # Agent-friendly aliases to avoid interactive prompts
+  alias rm='rm -f'
+  alias cp='cp -f'
+  alias mv='mv -f'
+  alias npm='npm --no-fund --no-audit'
+  alias yarn='yarn --non-interactive'
+  alias pip='pip --quiet'
+  alias git='git -c advice.detachedHead=false'
+else
+  source $ZSH/oh-my-zsh.sh
+
+  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+  eval "$(/Users/arthur/.local/bin/mise activate zsh)"
+
+  # The following lines have been added by Docker Desktop to enable Docker CLI completions.
+  fpath=(/Users/arthur/.docker/completions $fpath)
+  autoload -Uz compinit
+  compinit
+  # End of Docker CLI completions
+fi
