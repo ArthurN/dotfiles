@@ -128,9 +128,7 @@ else
 
   eval "$(/Users/arthur/.local/bin/mise activate zsh)"
 
-  # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-  fpath=(/Users/arthur/.docker/completions $fpath)
+  fpath=($ZSH_CUSTOM/completions /Users/arthur/.docker/completions $fpath)
   autoload -Uz compinit
   compinit
-  # End of Docker CLI completions
 fi
