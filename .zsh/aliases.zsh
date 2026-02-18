@@ -38,6 +38,7 @@ alias dcup="dc up"
 # Yarn
 alias yt="yarn test"
 alias yui="yarn upgrade-interactive"
+alias yb="yarn build"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
