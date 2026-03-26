@@ -1,3 +1,6 @@
+# uncomment to enable profiling. very top of ~/.zshrc. also uncomment at the bottom of ~/.zshrc.
+# zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -74,7 +77,7 @@ ZSH_CUSTOM="/Users/arthur/.zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases mix mise)
+plugins=(aliases mix)
 
 # User configuration
 #==============================================================================================================================
@@ -84,8 +87,8 @@ export LANG=en_US.UTF-8
 export EDITOR="cursor -nw"
 
 # PATH mods
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-export PATH="$(brew --prefix)/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 # Agent detection - only activate minimal mode for actual agents
 if [[ -n "$npm_config_yes" ]] || [[ -n "$CI" ]] || [[ "$-" != *i* ]]; then
@@ -121,14 +124,14 @@ if [[ "$AGENT_MODE" == "true" ]]; then
   alias pip='pip --quiet'
   alias git='git -c advice.detachedHead=false'
 else
+  fpath=($ZSH_CUSTOM/completions /Users/arthur/.docker/completions $fpath)
   source $ZSH/oh-my-zsh.sh
 
   # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
   [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
   eval "$(/Users/arthur/.local/bin/mise activate zsh)"
-
-  fpath=($ZSH_CUSTOM/completions /Users/arthur/.docker/completions $fpath)
-  autoload -Uz compinit
-  compinit
 fi
+
+# uncomment to enable profiling. very bottom of ~/.zshrc. also uncomment at the top of ~/.zshrc.
+# zprof
