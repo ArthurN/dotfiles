@@ -35,10 +35,10 @@ alias dcd="dc down"
 alias dcrb="dc down -v && dc up --build --detach"
 alias dcup="dc up"
 
-# Yarn
-alias yt="yarn test"
-alias yui="yarn upgrade-interactive"
-alias yb="yarn build"
+# PNPM
+alias p="pnpm"
+alias pt="pnpm test"
+alias pb="pnpm build"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"

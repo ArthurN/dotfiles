@@ -120,7 +120,6 @@ if [[ "$AGENT_MODE" == "true" ]]; then
   alias cp='cp -f'
   alias mv='mv -f'
   alias npm='npm --no-fund --no-audit'
-  alias yarn='yarn --non-interactive'
   alias pip='pip --quiet'
   alias git='git -c advice.detachedHead=false'
 else
