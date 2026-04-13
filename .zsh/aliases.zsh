@@ -41,6 +41,7 @@ alias p="pnpm"
 alias pt="pnpm test"
 alias pb="pnpm build"
 alias pi="pnpm install"
+alias ptc="pnpm typecheck"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
