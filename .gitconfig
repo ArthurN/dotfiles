@@ -28,6 +28,7 @@
 [core]
 	editor = cursor -nw
 	excludesfile = /Users/arthur/.gitignore_global
+	ignorecase = false
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -53,7 +54,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

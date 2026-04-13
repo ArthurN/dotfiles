@@ -14,6 +14,7 @@ alias gh="git hist"
 alias gst="git st"
 alias gp="git p"
 alias gpf="git pf"
+alias gmm="git_merge_into_main_from_current_branch"
 
 # Backwards compat
 alias ibrew="arch -x86_64 /opt/homebrew/bin/brew"
@@ -39,6 +40,7 @@ alias dcup="dc up"
 alias p="pnpm"
 alias pt="pnpm test"
 alias pb="pnpm build"
+alias pi="pnpm install"
 
 # Elastic
 alias es="/usr/local/bin/elasticsearch/bin/elasticsearch"
