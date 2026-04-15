@@ -15,6 +15,7 @@ alias gst="git st"
 alias gp="git p"
 alias gpf="git pf"
 alias gmm="git_merge_into_main_from_current_branch"
+alias gfpp="git fpp"
 
 # Backwards compat
 alias ibrew="arch -x86_64 /opt/homebrew/bin/brew"
@@ -57,8 +58,5 @@ alias pip="pip3"
 alias mt="mix test"
 alias mta="mix test.all"
 
-# Fly.io
-alias fly-staging="fly -c fly.staging.toml"
-
-# Mise
-alias mrc="mise run cursor"
+# Justfile
+alias j="just"
