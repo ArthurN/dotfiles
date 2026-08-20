@@ -23,3 +23,18 @@ git_merge_into_main_from_current_branch() {
   fi
   git co main && git reset --hard && git merge "$branch"
 }
+
+iterm() {
+  local dir="${1:-$PWD}"
+  dir="$(cd "$dir" 2>/dev/null && pwd)" || return 1
+
+  osascript >/dev/null <<EOF
+tell application "iTerm2"
+  activate
+  set newWindow to (create window with default profile)
+  tell current session of newWindow
+    write text "cd $(printf '%q' "$dir")"
+  end tell
+end tell
+EOF
+}
