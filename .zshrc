@@ -115,6 +115,9 @@ if [[ "$AGENT_MODE" == "true" ]]; then
   alias npm='npm --no-fund --no-audit'
   alias pip='pip --quiet'
   alias git='git -c advice.detachedHead=false'
+
+  # Shims need no hook, so they work in non-interactive shells.
+  eval "$(/Users/arthur/.local/bin/mise activate zsh --shims)"
 else
   fpath=($ZSH_CUSTOM/completions /Users/arthur/.docker/completions $fpath)
   source $ZSH/oh-my-zsh.sh
